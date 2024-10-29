@@ -1,0 +1,715 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #5b09633f;
+    --color-de-fondo-menu: #788dd3cb;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex; 
+    flex-wrap: nowrap;
+    flex-direction:column;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+.cabecera__titulo {
+    padding-right: 20px;
+
+}
+
+.navegacion__lista a:nth-child(6){
+    color:#464646;
+    font-weight: 700;
+    font-style: normal;
+}
+.navegacion__lista {    
+    text-decoration: none;
+    color:#464646;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+
+/*Icono de formacion del sena*/
+
+.formacion__icono {
+    max-width: 100%;
+    height: auto;
+    
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+ 
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px 20px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+/* Estilo del contenedor de la imagen */
+.presentacion__foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 250px; /* Ancho y alto iguales para asegurar la forma circular */
+    height: 250px;
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+    overflow: hidden;
+    background: linear-gradient(135deg, #e66465, #9198e5); /* Fondo degradado */
+    transition: transform 0.3s ease-in-out; /* Animación en hover */
+  }
+  
+  .presentacion__foto:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+  }
+  
+  /* Estilo de la imagen */
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+    border-radius: 50%; /* Hace que la imagen sea circular también */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .presentacion__foto:hover .profile-img {
+    opacity: 0.9; /* Efecto sutil de opacidad en hover */
+  }
+  
+
+
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.redes { 
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.redes__img{
+    width: 64px;
+    height: 64px;
+}
+
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    display: flex;
+    background-color:#788dd3cb;
+    align-items:center;
+    flex-direction:row ;
+    justify-content: space-around;
+    padding-left: 400px;
+    padding-top: 5px;
+   
+}
+.sobre-mi__titulo {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+
+}
+.sobre-mi__firma {
+    width: 80px;
+    height: 80px;
+
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    
+    background-color: #f5f5f5;
+    padding: 20px;
+    padding-bottom: 100px;
+    justify-content: space-around;
+}
+.habilidades_titulo {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+
+}
+.habilidades_lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    padding-top: 30px;
+}
+.habilidades_icono{
+    width: 64px;
+    height: 64px;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    background-color: #F5F5F5;
+    padding: 15px 9%;
+    padding-bottom: 80px;
+}
+.aficiones_titulo {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'montserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;   
+}
+.aficiones_lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    padding-top: 30px;
+}
+.aficiones_icono{
+    width: 64px;
+    height: 64px;
+}
+
+/*-------------------------------Seccion Formacion Academica-----------------------*/
+.formacion {
+    background-color:#788dd3cb;
+    padding: 15px 9%;
+    padding-bottom: 80px;
+}
+.formacion_titulo {
+    font-family: 'monserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+.formacion_lista {
+    display: grid;
+    align-self: center;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    gap: 15px;
+    padding-top: 30px;
+}
+.formacion__icono {
+    height: 160px;
+    width: 150px;
+}
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.experience_info {
+    text-align: center;
+
+
+}
+
+.experiencie_box {
+    width: 1437px; 
+    height: 602px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+.experience_img {
+    height: 750px;
+    max-width: auto;
+}
+
+.experiencie_box {
+    width: 1437px; 
+    height: 602px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+
+.experiencie_box {
+    width: 1437px; 
+    height: 602px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+
+
+.experiencie_box{
+    width: 1437px; 
+    height: 602px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+
+.experience_section {
+    text-align:center;
+    font-size: 32px;
+    font-family:'Montserrat';
+    font-weight: 700;
+    font-style:normal;
+}
+.secretoski {
+    margin: 0.5rem;
+    border:1px solid;
+    border-color: #063777;
+    color: #5d239f;
+    font-size: 1rem;
+    width: 116px;
+    height: 51px;
+    cursor: pointer;  
+}
+.secretoski--demo{
+        margin: 0.5rem;
+        border:1px solid;
+        border-color: #2A7AE4;
+        color: #2A7AE4;
+        font-size: 1rem;
+        width: 116px;
+        height: 51px;
+        cursor: pointer;  
+    
+}
+
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+/* Estilos generales para la sección del formulario */
+.formcontacto {
+    background-color: #ffffff; /* Fondo blanco para mayor limpieza */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centrar contenido */
+    flex-direction: column;
+    align-items: center; /* Centramos todos los elementos */
+}
+
+.formcontacto_tittle, 
+.formcontacto_subtexto, 
+.formcontacto_input, 
+.formcontacto_textarea, 
+.formcontacto_botao {
+    font-family: 'Roboto', sans-serif; /* Asegurando misma fuente */
+    font-size: 16px; /* Tamaño de fuente uniforme */
+    font-weight: 400; /* Peso de fuente uniforme */
+}
+
+.formcontacto_tittle {
+    font-size: 28px; /* Ajustamos el tamaño de la fuente */
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; /* Estilo de mayúsculas */
+    letter-spacing: 2px;
+}
+
+.formcontacto_subtexto {
+    font-size: 16px; /* Ajustamos el tamaño de la fuente */
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.formcontacto_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Centramos todos los elementos del formulario */
+    width: 100%;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 600px; /* Todos los inputs y textarea tendrán el mismo tamaño máximo */
+    position: relative;
+    margin-bottom: 20px; /* Espaciado uniforme entre campos */
+}
+
+.formcontacto_input, 
+.formcontacto_textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #ddd; /* Borde uniforme */
+    border-radius: 8px;
+    font-size: 16px; /* Ajustamos el tamaño de la fuente */
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif; /* Asegurando misma fuente */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-shadow: none; /* Eliminamos sombra en todos los campos */
+}
+
+.formcontacto_input:focus, 
+.formcontacto_textarea:focus {
+    border-color: #3498db; /* Azul claro al enfocar */
+    background-color: #ffffff;
+    outline: none;
+}
+
+.input-label, 
+.textarea-label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #aaa;
+    font-style: normal;
+    font-weight: 0;
+    font-size: 0px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.formcontacto_input:focus + .input-label, 
+.formcontacto_textarea:focus + .textarea-label,
+.formcontacto_input:not(:placeholder-shown) + .input-label, 
+.formcontacto_textarea:not(:placeholder-shown) + .textarea-label {
+    top: -10px;
+    left: 15px;
+    font-size: 12px;
+    color: #3498db;
+    background-color: #ffffff;
+    padding: 0 5px;
+}
+
+.formcontacto_botao {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px; /* Ajustamos el tamaño de la fuente */
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.formcontacto_botao:hover {
+    background-color: #2980b9;
+}
+
+.input-message-error {
+    font-size: 13px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+.input-container.invalid .input-message-error {
+    display: block;
+}
+
+.experience_img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin: 30px auto;
+    display: block;
+}
+
+/* Personalización para eliminar la sombra y señalador del campo "nombre" */
+.formcontacto_input#nombre {
+    box-shadow: none; /* Sin sombra para el campo de nombre */
+    font-weight: 700; /* Asegura mismo estilo */
+    font-size: 16px; /* Asegura mismo tamaño */
+    font-family: 'Roboto', sans-serif; /* Asegura misma fuente */
+    color: #333; /* Uniformidad de color */
+}
+
+  
+/*-------------------------------footer------------------------------------------------*/
+.footer{
+    text-align:center;
+    padding-top:100px;
+    font-size: 15px;
+    font-family: 'Monttsserrat';
+    font-style: oblique;
+    font-weight: 500;
+}
+
+
+
+/* Estilos generales que se aplican a todos los dispositivos */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera__logo {
+    width: 150px;
+}
+
+/* Responsividad para móviles (pantallas de menos de 480px) */
+@media (max-width: 768px) {
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navegacion__lista {
+        flex-direction: column;
+    }
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion__foto {
+        width: 150px;
+        margin:auto;      
+        
+    }
+    .presentacion__contenedor{
+        max-width: 100%;
+    }
+    .presentacion__titulo {
+        font-size: 1rem;
+    }
+    .experience_img {
+        height: 250px;
+        max-width: auto;
+
+    }
+    .redes {
+        flex-direction: column;
+        gap:15px;
+    }
+    .redes__img {
+        justify-content: center;
+    }
+    .redes__img img {
+        width: 25px; /* Aumentas el tamaño del ícono en móviles */
+    }
+    
+    .sobre-mi {
+        padding: 20px;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 2rem;
+        padding: 10%;
+        
+    }
+
+    .sobre-mi__texto {
+        font-size: 1rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    .sobre-mi__firma {
+        width: 150px; /* Reduce el tamaño de la firma en móviles */
+    }
+    .habilidades{
+        flex-direction: column;
+        text-align: center;
+    }
+    .habilidades_icono{
+        flex-direction: column;
+        width: 25px;
+        height: 25px; 
+        justify-content: center;
+        align-content: center;   
+    }
+    .habilidades_lista {
+        justify-content: center;
+    }
+    .aficiones{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aficiones_lista{
+        justify-content: center;  
+    }
+    .aficiones_icono {
+        width: 25px;
+        height: 25px;
+    }
+    .formacion  {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Responsividad para tablets pequeñas (pantallas entre 481px y 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .cabecera__titulo {
+        font-size: 22px;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        justify-content: space-around; /* Distribuir enlaces horizontalmente */
+    }
+    
+
+    .presentacion__contenedor {
+        padding: 20px;
+    }
+    .experiencie_box1{
+        max-width: 100%;
+        height: auto;
+    }
+    .experiencie_box2{
+        max-width: 100%;
+        height: auto;
+    }
+    .experiencie_box3{
+        max-width: 100%;
+        height: auto;
+    }
+    .experiencie_box4{
+        max-width: 100%;
+        height: auto;
+    }
+    .redes {
+        flex-direction: column;
+        gap:15px;
+    }
+    .redes__img img {
+        width: 25px; /* Aumentas el tamaño del ícono en móviles */
+    }
+    .habilidades_icono{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/* Responsividad para tablets grandes y pequeñas laptops (pantallas entre 769px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .cabecera__logo {
+        width: 20%;
+    }
+
+    .presentacion__foto {
+        width: 50%; /* Imagen ocupará la mitad del ancho */
+        margin: auto; /* Centrar la imagen */
+    }
+    .redes {
+        flex-direction: column;
+        gap:20px;
+    }
+    .redes__img img {
+        width: 25px; /* Aumentas el tamaño del ícono en móviles */
+    }
+    .habilidades_icono{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Para laptops y pantallas grandes (mayores a 1025px) */
+@media (min-width: 1025px) {
+    .cabecera__titulo {
+        font-size: 28px;
+    }
+
+    .presentacion__foto {
+        width: 300px;
+        margin: auto; /* Tamaño fijo para pantallas grandes */
+    }
+
+    .navegacion__lista {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.presentacion__contenedor {
+    width: 90%; /* Evitar que el contenido se desborde */
+    margin:  auto;
+}
+.navegacion__lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+}
+
